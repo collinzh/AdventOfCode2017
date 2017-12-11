@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class DayTwo {
+public class Day2 {
 
     private static final String DAY_TWO = "1208\t412\t743\t57\t1097\t53\t71\t1029\t719\t133\t258\t69\t1104\t373\t367\t365\n"
         + "4011\t4316\t1755\t4992\t228\t240\t3333\t208\t247\t3319\t4555\t717\t1483\t4608\t1387\t3542\n"

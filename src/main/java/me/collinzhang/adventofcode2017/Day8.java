@@ -10,7 +10,7 @@ import java.util.function.BiFunction;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DayEight {
+public class Day8 {
 
     private static final Pattern INSTRUCTION_PATTERN = Pattern.compile("^([a-z]+) ([a-z]+) ([-0-9]+) if ([a-z]+) ([<>=!]+) ([-0-9]+)$");
 

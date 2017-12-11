@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DaySeven {
+public class Day7 {
 
     private static final Pattern LINE_PATTERN = Pattern.compile("([a-z]+)\\(([0-9]+)\\)(->([a-z,]+))?");
 
@@ -26,11 +26,11 @@ public class DaySeven {
 
     public static void main(String[] args) {
         System.out.println(daySeven1(new Scanner(TEST)));
-        System.out.println(daySeven1(new Scanner(DaySeven.class.getResourceAsStream("/day7.txt"))));
+        System.out.println(daySeven1(new Scanner(Day7.class.getResourceAsStream("/day7.txt"))));
 
         // Got root name from previous step
         System.out.println(daySeven2(new Scanner(TEST), "tknk"));
-        System.out.println(daySeven2(new Scanner(DaySeven.class.getResourceAsStream("/day7.txt")), "vvsvez"));
+        System.out.println(daySeven2(new Scanner(Day7.class.getResourceAsStream("/day7.txt")), "vvsvez"));
     }
 
     private static String daySeven1(Scanner input) {

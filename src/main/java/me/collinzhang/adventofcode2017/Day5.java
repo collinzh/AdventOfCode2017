@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DayFive {
+public class Day5 {
 
     private static final String DAY_FIVE =
         "2\n" + "0\n" + "-1\n" + "2\n" + "-2\n" + "-3\n" + "1\n" + "-2\n" + "0\n" + "-8\n" + "-1\n" + "-7\n" + "-8\n" + "-11\n" + "-7\n" + "-8\n" + "-7\n"

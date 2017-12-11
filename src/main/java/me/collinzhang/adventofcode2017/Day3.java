@@ -3,7 +3,7 @@ package me.collinzhang.adventofcode2017;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DayThree {
+public class Day3 {
 
     public static void main(String[] args) {
         System.out.println(dayThree1(325489));

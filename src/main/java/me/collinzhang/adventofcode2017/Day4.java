@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class DayFour {
+public class Day4 {
 
     private static final String DAY_FOUR =
         "una bokpr ftz ryw nau yknf fguaczl anu\n" + "tvay wvco bcoblpt fwzg sfsys zvuqll mcbhwz ovcw fgdy\n" + "ynsocz vid rfmsy essqt fpbjvvq sldje qfpvjvb\n"

@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.StringJoiner;
 
-public class DaySix {
+public class Day6 {
 
     private static final String DAY_SIX = "0\t5\t10\t0\t11\t14\t13\t4\t11\t8\t8\t7\t1\t4\t12\t11";
 
