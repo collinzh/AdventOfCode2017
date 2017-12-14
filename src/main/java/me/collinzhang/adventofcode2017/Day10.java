@@ -22,7 +22,7 @@ public class Day10 {
         System.out.println(day10p2(DAY_10));
     }
 
-    private static String day10p2(String input) {
+    static String day10p2(String input) {
         int length = 256;
         byte[] numbers = new byte[256];
         for (int i = 0; i < length; i++) {
