@@ -10,11 +10,11 @@ public class Day19 {
         "     |          \n" + "     |  +--+    \n" + "     A  |  C    \n" + " F---|----E|--+ \n" + "     |  |  |  D \n" + "     +B-+  +--+ \n" + "\n";
 
     public static void main(String[] args) {
-        System.out.println(day19P1(new Scanner(TEST)));
-        System.out.println(day19P1(Util.openScanner("/day19.txt")));
+        System.out.println(day19P1_2(new Scanner(TEST)));
+        System.out.println(day19P1_2(Util.openScanner("/day19.txt")));
     }
 
-    private static String day19P1(Scanner input) {
+    private static String day19P1_2(Scanner input) {
         Character[][] maze = parseMazeGrid(input);
 
         int startX = -1;
@@ -29,11 +29,20 @@ public class Day19 {
         int currentY = 0;
         Direction currentDirection = Direction.DOWN;
         StringBuilder seenLetters = new StringBuilder();
+        int steps = 0;
 
         for (; ; ) {
             char currentChar = maze[currentY][currentX];
+            if (currentChar == ' ') {
+                break;
+            }
+
+            steps++;
             if (Character.isLetter(currentChar)) {
                 seenLetters.append(currentChar);
+                seenLetters.append(" - ");
+                seenLetters.append(steps);
+                seenLetters.append('\n');
             }
 
             int nextX = currentX;
