@@ -80,9 +80,8 @@ public class Day20 {
             // Rebuild HashSet to make sure the hashes are updated after particles are moved
             particles = particles.stream().filter(p -> !toRemove.contains(p)).peek(Particle::move).collect(Collectors.toSet());
 
-            // Take a sample every 1000000 rounds
-            if (i % 100000 == 0) {
-                LOGGER.info(String.format("Finished %d rounds", i));
+            // Take a sample every 1000 rounds
+            if (i % 1000 == 0) {
                 if (lastSampled != particles.size()) {
                     lastSampled = particles.size();
                     stabledRounds = 0;
