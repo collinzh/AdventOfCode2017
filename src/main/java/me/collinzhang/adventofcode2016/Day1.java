@@ -21,8 +21,7 @@ public class Day1 {
         Set<Position> visited = new HashSet<>();
 
         Direction direction = Direction.UP;
-        int x = 0;
-        int y = 0;
+        Position position = new Position(0, 0);
         for (String next : words) {
 
             if (next.charAt(0) == 'L') {
@@ -33,26 +32,11 @@ public class Day1 {
             int len = Integer.parseInt(next.substring(1));
 
             for (int i = 0; i < len; i++) {
-                Position position = new Position(x, y);
                 if (visited.contains(position)) {
                     return Math.abs(position.x) + Math.abs(position.y);
                 }
                 visited.add(position);
-
-                switch (direction) {
-                case UP:
-                    y--;
-                    break;
-                case DOWN:
-                    y++;
-                    break;
-                case LEFT:
-                    x--;
-                    break;
-                case RIGHT:
-                    x++;
-                    break;
-                }
+                position = position.move(direction);
             }
         }
 

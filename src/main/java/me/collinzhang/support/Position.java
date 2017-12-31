@@ -9,6 +9,28 @@ public class Position {
         this.y = y;
     }
 
+    public Position move(Direction direction) {
+        int nX = x;
+        int nY = y;
+        switch (direction) {
+
+        case UP:
+            nY--;
+            break;
+        case DOWN:
+            nY++;
+            break;
+        case LEFT:
+            nX--;
+            break;
+        case RIGHT:
+            nX++;
+            break;
+        }
+
+        return new Position(nX, nY);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o)
