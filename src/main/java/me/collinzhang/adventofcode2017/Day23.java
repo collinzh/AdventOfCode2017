@@ -7,11 +7,12 @@ import java.util.Map;
 import java.util.Scanner;
 
 import me.collinzhang.adventofcode2017.support.PrimeNumberDetector;
+import me.collinzhang.support.Util;
 
 public class Day23 {
 
     public static void main(String[] args) {
-        System.out.println(day23P1(Util.openScanner("/day23.txt")));
+        System.out.println(day23P1(Util.openScanner("/2017/day23.txt")));
         System.out.println(day23P2());
     }
 

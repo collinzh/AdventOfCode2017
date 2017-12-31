@@ -10,6 +10,8 @@ import java.util.function.BiFunction;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import me.collinzhang.support.Util;
+
 public class Day8 {
 
     private static final Pattern INSTRUCTION_PATTERN = Pattern.compile("^([a-z]+) ([a-z]+) ([-0-9]+) if ([a-z]+) ([<>=!]+) ([-0-9]+)$");
@@ -18,10 +20,10 @@ public class Day8 {
 
     public static void main(String[] args) {
         System.out.println(dayEight1(new Scanner(TEST)));
-        System.out.println(dayEight1(Util.openScanner("/day8.txt")));
+        System.out.println(dayEight1(Util.openScanner("/2017/day8.txt")));
 
         System.out.println(dayEight2(new Scanner(TEST)));
-        System.out.println(dayEight2(Util.openScanner("/day8.txt")));
+        System.out.println(dayEight2(Util.openScanner("/2017/day8.txt")));
     }
 
     private static Integer dayEight2(Scanner input) {

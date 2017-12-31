@@ -26,11 +26,11 @@ public class Day7 {
 
     public static void main(String[] args) {
         System.out.println(daySeven1(new Scanner(TEST)));
-        System.out.println(daySeven1(new Scanner(Day7.class.getResourceAsStream("/day7.txt"))));
+        System.out.println(daySeven1(new Scanner(Day7.class.getResourceAsStream("/2017/day7.txt"))));
 
         // Got root name from previous step
         System.out.println(daySeven2(new Scanner(TEST), "tknk"));
-        System.out.println(daySeven2(new Scanner(Day7.class.getResourceAsStream("/day7.txt")), "vvsvez"));
+        System.out.println(daySeven2(new Scanner(Day7.class.getResourceAsStream("/2017/day7.txt")), "vvsvez"));
     }
 
     private static String daySeven1(Scanner input) {

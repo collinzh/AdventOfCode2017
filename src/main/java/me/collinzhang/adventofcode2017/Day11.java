@@ -2,13 +2,15 @@ package me.collinzhang.adventofcode2017;
 
 import java.util.Scanner;
 
+import me.collinzhang.support.Util;
+
 public class Day11 {
 
     public static void main(String[] args) {
         System.out.println(day11p1(new Scanner("se,sw,se,sw,sw")));
-        System.out.println(day11p1(Util.openScanner("/day11.txt")));
+        System.out.println(day11p1(Util.openScanner("/2017/day11.txt")));
 
-        System.out.println(day11p2(Util.openScanner("/day11.txt")));
+        System.out.println(day11p2(Util.openScanner("/2017/day11.txt")));
     }
 
     private static int day11p2(Scanner input) {

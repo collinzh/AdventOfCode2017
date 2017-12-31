@@ -14,6 +14,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import me.collinzhang.support.Util;
+
 public class Day20 {
 
     private static final Pattern LINE_PATTERN = Pattern.compile("p=<(.*)>,v=<(.*)>,a=<(.*)>");
@@ -27,10 +29,10 @@ public class Day20 {
 
     public static void main(String[] args) {
         System.out.println(day20P1(new Scanner(TEST)));
-        System.out.println(day20P1(Util.openScanner("/day20.txt")));
+        System.out.println(day20P1(Util.openScanner("/2017/day20.txt")));
 
         System.out.println(day20P2(new Scanner(TEST2), 10));
-        System.out.println(day20P2(Util.openScanner("/day20.txt"), 100_000_000L));
+        System.out.println(day20P2(Util.openScanner("/2017/day20.txt"), 100_000_000L));
     }
 
     private static int day20P2(Scanner input, long rounds) {

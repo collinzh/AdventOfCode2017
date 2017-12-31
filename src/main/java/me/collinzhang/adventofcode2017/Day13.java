@@ -5,16 +5,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import me.collinzhang.support.Util;
+
 public class Day13 {
 
     private static final String TEST = "0: 3\n" + "1: 2\n" + "4: 4\n" + "6: 4";
 
     public static void main(String[] args) {
         System.out.println(day13P1(new Scanner(TEST)));
-        System.out.println(day13P1(Util.openScanner("/day13.txt")));
+        System.out.println(day13P1(Util.openScanner("/2017/day13.txt")));
 
         System.out.println(day13P2(new Scanner(TEST)));
-        System.out.println(day13P2(Util.openScanner("/day13.txt")));
+        System.out.println(day13P2(Util.openScanner("/2017/day13.txt")));
     }
 
     private static int day13P2(Scanner input) {

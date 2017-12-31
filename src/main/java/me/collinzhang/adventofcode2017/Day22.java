@@ -1,8 +1,15 @@
 package me.collinzhang.adventofcode2017;
 
+import static me.collinzhang.support.Direction.leftOf;
+import static me.collinzhang.support.Direction.reverseOf;
+import static me.collinzhang.support.Direction.rightOf;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+
+import me.collinzhang.support.Direction;
+import me.collinzhang.support.Util;
 
 public class Day22 {
 
@@ -10,10 +17,10 @@ public class Day22 {
 
     public static void main(String[] args) {
         System.out.println(day22P1(new Scanner(TEST)));
-        System.out.println(day22P1(Util.openScanner("/day22.txt")));
+        System.out.println(day22P1(Util.openScanner("/2017/day22.txt")));
 
         System.out.println(day22P2(new Scanner(TEST)));
-        System.out.println(day22P2(Util.openScanner("/day22.txt")));
+        System.out.println(day22P2(Util.openScanner("/2017/day22.txt")));
     }
 
     private static int day22P1(Scanner input) {
@@ -119,70 +126,6 @@ public class Day22 {
         }
 
         return bursts;
-    }
-
-    enum Direction {
-        UP,
-        DOWN,
-        LEFT,
-        RIGHT
-    }
-
-    private static Direction leftOf(Direction direction) {
-        Direction ret = null;
-        switch (direction) {
-        case UP:
-            ret = Direction.LEFT;
-            break;
-        case DOWN:
-            ret = Direction.RIGHT;
-            break;
-        case LEFT:
-            ret = Direction.DOWN;
-            break;
-        case RIGHT:
-            ret = Direction.UP;
-            break;
-        }
-        return ret;
-    }
-
-    private static Direction rightOf(Direction direction) {
-        Direction ret = null;
-        switch (direction) {
-        case UP:
-            ret = Direction.RIGHT;
-            break;
-        case DOWN:
-            ret = Direction.LEFT;
-            break;
-        case LEFT:
-            ret = Direction.UP;
-            break;
-        case RIGHT:
-            ret = Direction.DOWN;
-            break;
-        }
-        return ret;
-    }
-
-    private static Direction reverseOf(Direction direction) {
-        Direction ret = null;
-        switch (direction) {
-        case UP:
-            ret = Direction.DOWN;
-            break;
-        case DOWN:
-            ret = Direction.UP;
-            break;
-        case LEFT:
-            ret = Direction.RIGHT;
-            break;
-        case RIGHT:
-            ret = Direction.LEFT;
-            break;
-        }
-        return ret;
     }
 
     static class Position {

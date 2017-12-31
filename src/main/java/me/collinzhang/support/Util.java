@@ -1,4 +1,4 @@
-package me.collinzhang.adventofcode2017;
+package me.collinzhang.support;
 
 import java.io.InputStream;
 import java.util.Scanner;

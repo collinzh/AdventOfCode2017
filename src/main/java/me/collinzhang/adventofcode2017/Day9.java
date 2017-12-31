@@ -2,14 +2,16 @@ package me.collinzhang.adventofcode2017;
 
 import java.util.Scanner;
 
+import me.collinzhang.support.Util;
+
 public class Day9 {
 
     public static void main(String[] args) {
         System.out.println(day9p1(new Scanner("{{<!!>},{<!!>},{<!!>},{<!!>}}")));
-        System.out.println(day9p1(Util.openScanner("/day9.txt")));
+        System.out.println(day9p1(Util.openScanner("/2017/day9.txt")));
 
         System.out.println(day9p2(new Scanner("<{o\"i!a,<{i<a>")));
-        System.out.println(day9p2(Util.openScanner("/day9.txt")));
+        System.out.println(day9p2(Util.openScanner("/2017/day9.txt")));
     }
 
     private static long day9p2(Scanner input) {

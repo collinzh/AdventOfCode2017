@@ -14,15 +14,17 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 import java.util.function.BiFunction;
 
+import me.collinzhang.support.Util;
+
 public class Day24 {
 
     private static final String TEST = "0/2\n" + "2/2\n" + "2/3\n" + "3/4\n" + "3/5\n" + "0/1\n" + "10/1\n" + "9/10";
 
     public static void main(String[] args) {
         System.out.println(day24P1(new Scanner(TEST)));
-        System.out.println(day24P1(Util.openScanner("/day24.txt")));
+        System.out.println(day24P1(Util.openScanner("/2017/day24.txt")));
 
-        System.out.println(day24P2(Util.openScanner("/day24.txt")));
+        System.out.println(day24P2(Util.openScanner("/2017/day24.txt")));
     }
 
     private static int day24P1(Scanner input) {

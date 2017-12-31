@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
+import me.collinzhang.support.Util;
+
 public class Day19 {
 
     private static final String TEST =
@@ -11,7 +13,7 @@ public class Day19 {
 
     public static void main(String[] args) {
         System.out.println(day19P1_2(new Scanner(TEST)));
-        System.out.println(day19P1_2(Util.openScanner("/day19.txt")));
+        System.out.println(day19P1_2(Util.openScanner("/2017/day19.txt")));
     }
 
     private static String day19P1_2(Scanner input) {

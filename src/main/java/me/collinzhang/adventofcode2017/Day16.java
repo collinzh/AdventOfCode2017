@@ -2,6 +2,8 @@ package me.collinzhang.adventofcode2017;
 
 import java.util.Scanner;
 
+import me.collinzhang.support.Util;
+
 public class Day16 {
 
     private static final String SIMPLE_NAMES = "abcde";
@@ -11,10 +13,10 @@ public class Day16 {
 
     public static void main(String[] args) {
         System.out.println(day16P1(new Scanner(TEST), SIMPLE_NAMES));
-        System.out.println(day16P1(Util.openScanner("/day16.txt"), NAMES));
+        System.out.println(day16P1(Util.openScanner("/2017/day16.txt"), NAMES));
 
         System.out.println(day16P2(new Scanner(TEST), SIMPLE_NAMES));
-        System.out.println(day16P2(Util.openScanner("/day16.txt"), NAMES));
+        System.out.println(day16P2(Util.openScanner("/2017/day16.txt"), NAMES));
     }
 
     private static String day16P2(Scanner input, String allDancers) {

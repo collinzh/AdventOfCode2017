@@ -10,13 +10,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import me.collinzhang.support.Util;
+
 public class Day21 {
 
     private static final Pattern RULE_PATTERN = Pattern.compile("^(.+)=>(.+)$");
 
     public static void main(String[] args) {
-        System.out.println(day21P1_2(Util.openScanner("/day21.txt"), 5));
-        System.out.println(day21P1_2(Util.openScanner("/day21.txt"), 18));
+        System.out.println(day21P1_2(Util.openScanner("/2017/day21.txt"), 5));
+        System.out.println(day21P1_2(Util.openScanner("/2017/day21.txt"), 18));
     }
 
     private static int day21P1_2(Scanner input, int rounds) {

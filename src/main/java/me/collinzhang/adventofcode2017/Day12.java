@@ -12,6 +12,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import me.collinzhang.support.Util;
+
 public class Day12 {
 
     private static final String TEST = "0 <-> 2\n" + "1 <-> 1\n" + "2 <-> 0, 3, 4\n" + "3 <-> 2, 4\n" + "4 <-> 2, 3, 6\n" + "5 <-> 6\n" + "6 <-> 4, 5";
@@ -20,10 +22,10 @@ public class Day12 {
 
     public static void main(String[] args) {
         System.out.println(day12P1(new Scanner(TEST)));
-        System.out.println(day12P1(Util.openScanner("/day12.txt")));
+        System.out.println(day12P1(Util.openScanner("/2017/day12.txt")));
 
         System.out.println(day12P2(new Scanner(TEST)));
-        System.out.println(day12P2(Util.openScanner("/day12.txt")));
+        System.out.println(day12P2(Util.openScanner("/2017/day12.txt")));
     }
 
     private static int day12P2(Scanner input) {
